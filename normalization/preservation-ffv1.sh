@@ -6,8 +6,8 @@ audioCodec="pcm_s16le"
 videoCodec="ffv1 -level 3"
 
 command="ffmpeg -vsync passthrough -i \"${inputFile}\" "
-command="${command} -vcodec ${videoCodec} -g 1 "
-command="${command} -acodec ${audioCodec}"
+command="${command} -c:v ${videoCodec} -g 1 "
+command="${command} -c:a ${audioCodec}"
 
 
 command="${command} ${outputFile}"
