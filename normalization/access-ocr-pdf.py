@@ -6,8 +6,8 @@ import shutil
 
 
 def burst_pdf(input, output):
-    cmd = ["convert", input, "-density", "300",
-           output]
+    cmd = ["gs", "-o", output, "-sDEVICE=png16m",
+           "-r300", "-dPDFFitPage=true", input]
     return subprocess.check_call(cmd)
 
 
