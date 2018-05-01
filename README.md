@@ -1,6 +1,9 @@
 Archivematica FPR tools
 =======================
 
+NOTE: As of the 1.7 version of Archivematica, the FPR server has been decoupled from Archivematica. Please see the [release notes](https://wiki.archivematica.org/Archivematica_1.7_and_Storage_Service_0.11_release_notes#Archivematica_decoupled_from_the_FPR_server). Issue creation has been disabled for this
+repository.
+
 This repository contains the source code to the scripts maintained in the [Archivematica FPR](https://github.com/artefactual/archivematica-fpr-admin) database.
 Because the tools are maintained in a database in FPR server and Archivematica installations, diffing the version history and running `git blame` is inconvenient; this repository is meant to make such tasks simpler.
 
